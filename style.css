@@ -1,0 +1,54 @@
+body {
+    background-color: #cccccc;
+    margin: 0;
+}
+h1 {
+    text-align: center; 
+    color: rgb(83, 19, 83);
+}
+td {
+    padding: 4px;
+}
+#Summary {
+    color: #660a79;
+    margin: 0 5px 5px 5px;
+}
+.page {
+    background: #fff;
+    padding: 10px;
+    border: 2px solid #555555;
+    margin: 0 5px 5px 5px;
+    display: none;
+}
+h3 {
+    margin: 0.2em 0 0.2em 0;
+    font-family: Georgia;
+    font-style: italic;
+}
+#top-menu-bar {
+    text-align: center;
+    background-color: #334455;
+    color: white;
+}
+#top-menu-bar li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+#top-menu-bar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+    color: white;
+}
+#top-menu-bar a:hover {
+    color: #334455;
+    background: #fff;
+}
+#contact {
+    float: left;
+    padding-left: 10px;
+}
+#content {
+    padding-left: 250px;
+}
