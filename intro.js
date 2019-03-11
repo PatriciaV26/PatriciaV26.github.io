@@ -1,12 +1,3 @@
-console.info("my first js file");
-
-var name="Patricia";
-var employed=true;
-
-console.warn(employed);
-console.info(name);
-
-
 function getWelcomeMsg() {
     return "Welcome to my site!";
 }
@@ -29,24 +20,6 @@ console.info("summaryElement", summaryElement);
 var color=getColor();
 summaryElement.style.color=color;
 
-//first example
-function hideHomePage() {
-    var el=document.getElementById("home-page");
-    el.style.display= "none";
-}
-function showSkillsPage() {
-    document.getElementById("skills-page").style.display= "block";
-}
-function clickOnSkills() {
-    //hideHomePage();
-    //showSkillsPage();
-    hidePage("home-page");
-    hidePage("languages-page");
-    hidePage("about-page");
-    showPage('skills-page');    
-}
-//first example - end
-
 function hidePage(page) {
     var el=document.getElementById(page);
     el.style.display= "none";
@@ -54,3 +27,4 @@ function hidePage(page) {
 function showPage(page) {
     document.getElementById(page).style.display= "block";
 }
+
