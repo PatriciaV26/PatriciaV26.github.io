@@ -53,14 +53,20 @@ initMenu();
 
 function showSkills() {
     var skills = [
-        {name: 'js', endorsements: 20}, 
+        {name: 'js', endorsements: 20, endorsedBy: 'Andrei I'}, 
         {name: 'html', endorsements: 8},
-        {name: 'css', endorsements: 12}, 
+        {name: 'css', endorsements: 12, endorsedBy: 'Vasile I'}, 
         {name: 'nodejs', endorsements: 3}
     ];
 
     var htmlSkills = skills.map(function(skill, index) {
-        var endorsements = ' <span class=endorsement>(' + skill.endorsements + ")</span>";
+        var endorsedBy = skill.endorsedBy;
+        if(endorsedBy){
+            endorsedBy = ' - ' + endorsedBy;
+        }else {
+            endorsedBy = '';
+        }
+        var endorsements = ` <span class=endorsement>(${skill.endorsements}${endorsedBy})</span>`;
         return '<li>' + skill.name.toUpperCase() + endorsements + '</li>';
     });
 
